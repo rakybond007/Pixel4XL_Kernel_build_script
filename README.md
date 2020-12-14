@@ -12,3 +12,6 @@ git checkout android-msm-coral-4.14-android10
 ### 스크립트 실행 순서
 make clean -> ./build_defconfig.sh -> ./build.sh
 새롭게 빌드하려 할 때 out 디렉토리 지운 다음 하기.
+### sys_call_table 주소 얻는법
+1. grep "sys_call_table" kernel_dir/out/System.map
+2. adb shell 접속, su 모드 -> echo 0 > /proc/sys/kernel/kptr_restrict -> cat /proc/kallsyms | grep sys_call_table
