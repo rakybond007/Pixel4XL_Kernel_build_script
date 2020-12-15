@@ -23,4 +23,4 @@ make clean -> ./build_defconfig.sh -> ./build.sh
 cp out/arch/arm64/boot/{dtbo.img,Image.lz4} "$ROOT_DIR/device/google/coral-kernel"
 cp out/arch/arm64/boot/dts/google/qcom-base/sm8150.dtb "$ROOT_DIR/device/google/coral-kernel"
 cp out/arch/arm64/boot/dts/google/qcom-base/sm8150-v2.dtb "$ROOT_DIR/device/google/coral-kernel"
-위와 같이 3개의 파일 복사 -> envsetup, lunch 실행 (aosp 빌드할때 하는거, 돼있는 터미널이면 pass) -> adb reboot fastboot -> fastboot flashall
+위와 같이 3개의 파일 복사 -> envsetup, lunch 실행 (aosp 빌드할때 하는거, 돼있는 터미널이면 pass) -> m (빌드) -> adb reboot fastboot -> fastboot flashall
