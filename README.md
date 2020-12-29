@@ -6,7 +6,11 @@
 ## Prepare
 ### Cross Compiler && Toolchain from AOSP
 repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r40
+### 까먹지 말고 할것
+1. opengapps 위해서 .repo/manifest.xml 수정하기 -> https://github.com/opengapps/aosp_build 참고
+2. vendor 설치 -> https://source.android.com/devices/automotive/start/pixelxl (픽셀4xl 경우 그대로 따라하기), https://developers.google.com/android/images 참고
 After building AOSP, Set the AOSP path as ROOT_DIR
+
 ### Kernel Source && branch
 git clone https://android.googlesource.com/kernel/msm
 git checkout android-msm-coral-4.14-android10
