@@ -2,14 +2,15 @@
 
 ## build script reference : github.com/GrapheneOS.kernel_google_coral
 ## 빌드과정 참고 구글 사이트 : https://source.android.com/setup/build/building?hl=ko
+## 순서 : repo init -> manifest.xml 수정 -> repo sync -> vendor 설치 -> 소스 수정 있으면 하고 -> m 빌드
 
 ## Prepare
 ### Cross Compiler && Toolchain from AOSP
 repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r40
 ### 까먹지 말고 할것
-1. opengapps 위해서 .repo/manifest.xml 수정하기 -> https://github.com/opengapps/aosp_build 참고
+1. opengapps 위해서 .repo/manifest.xml 수정하기 -> https://github.com/opengapps/aosp_build 참고 (repo init 이후)
 2. vendor 설치 -> https://source.android.com/devices/automotive/start/pixelxl (픽셀4xl 경우 그대로 따라하기), https://developers.google.com/android/images 참고
-After building AOSP, Set the AOSP path as ROOT_DIR
+After building AOSP, Set the AOSP path as ROOT_DIR (repo sync 이후)
 
 ### Kernel Source && branch
 git clone https://android.googlesource.com/kernel/msm
