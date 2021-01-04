@@ -6,11 +6,12 @@
 
 ## AOSP 빌드 과정 (선행되어야함)
 ### 순서
-환경 셋업 (envsetup, lunch) -> repo init -> vendor 설치 -> repo sync -> repo forall -c git lfs pull (opengapps 관련) -> 빌드 (m)
+환경 셋업 (envsetup, lunch) -> repo init  -> 아래 내용 1번 -> repo sync -> repo forall -c git lfs pull (opengapps 관련)-> vendor 설치 -> 빌드 (m)
 ### AOSP init
 repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r40
 ### repo sync 전 해야할 것.
 1. opengapps 위해서 .repo/manifest.xml 수정하기 -> https://github.com/opengapps/aosp_build 참고
+### repo sync 이후
 2. vendor 설치 -> https://source.android.com/devices/automotive/start/pixelxl (픽셀4xl 경우 그대로 따라하기), https://developers.google.com/android/images 참고
 ### 
 After building AOSP, Set the AOSP path as ROOT_DIR
