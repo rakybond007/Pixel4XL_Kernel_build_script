@@ -9,6 +9,7 @@
 환경 셋업 (envsetup, lunch) -> repo init  -> 아래 내용 1번 -> repo sync -> repo forall -c git lfs pull (opengapps 관련)-> vendor 설치 -> 빌드 (m)
 ### AOSP init
 repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r40
+repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r27 (픽셀5)
 ### repo sync 전 해야할 것.
 1. opengapps 위해서 .repo/manifest.xml 수정하기 -> https://github.com/opengapps/aosp_build 참고
 ### repo sync 이후
