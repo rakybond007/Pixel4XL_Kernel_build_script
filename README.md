@@ -13,6 +13,7 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.
 1. opengapps 위해서 .repo/manifest.xml 수정하기 -> https://github.com/opengapps/aosp_build 참고
 ### repo sync 이후
 2. vendor 설치 -> https://source.android.com/devices/automotive/start/pixelxl (픽셀4xl 경우 그대로 따라하기), https://developers.google.com/android/images 참고
+-> https://source.android.com/setup/start/build-numbers#source-code-tags-and-builds 여기서 버전태그 잘 확인하고 해야함. 드라이버 파일 아무거나 썼다가 픽셀5 계속 문제 남
 ### 
 After building AOSP, Set the AOSP path as ROOT_DIR
 
