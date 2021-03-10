@@ -17,17 +17,23 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.
 -> https://source.android.com/setup/start/build-numbers#source-code-tags-and-builds 여기서 버전태그 잘 확인하고 해야함. 드라이버 파일 아무거나 썼다가 픽셀5 계속 문제 남
 
 픽셀4 xl
+
 curl --output - https://dl.google.com/dl/android/aosp/google_devices-coral-qq3a.200705.002-8c59c992.tgz  | tar -xzvf -
+
 tail -n +315 extract-google_devices-coral.sh | tar -zxvf -
 
 curl --output - https://dl.google.com/dl/android/aosp/qcom-coral-qq3a.200705.002-316d4246.tgz | tar -xzvf -
+
 tail -n +315 extract-qcom-coral.sh | tar -xzvf -
 
 픽셀5 (RQ1A.210105.003)
+
 curl --output - https://dl.google.com/dl/android/aosp/google_devices-redfin-rq1a.210105.003-53b67adf.tgz  | tar -xzvf -
+
 tail -n +315 extract-google_devices-coral.sh | tar -zxvf -
 
 curl --output - https://dl.google.com/dl/android/aosp/qcom-redfin-rq1a.210105.003-448ee17f.tgz | tar -xzvf -
+
 tail -n +315 extract-qcom-coral.sh | tar -xzvf -
 
 ### 
